@@ -1,0 +1,45 @@
+<section class="page__inner">
+    <h3 class="title">Ranking de <?= $categoria[0]->nome_categoria ?></h3>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th class="table__line">Posição</th>
+                <th class="table__line">Nome</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+<?php foreach($itens as $key => $item) { ?>
+            
+            <tr>
+                <td class="table__line table__arrow">
+
+<?php if ($key != array_key_first($itens)) { ?>
+
+                    <a href="item/update?direction=up&posicao=<?= $item->posicao ?>&categoria_id=<?= $categoria[0]->id ?>&id=<?= $item->id ?>" class="table__arrow-btn table__arrow--up"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+<?php } ?>
+
+<?php if ($key != array_key_last($itens)) { ?>
+
+                    <a href="item/update?direction=down&posicao=<?= $item->posicao ?>&categoria_id=<?= $categoria[0]->id ?>&id=<?= $item->id ?>" class="table__arrow-btn table__arrow--down"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>                    
+
+<?php } ?>
+                </td>
+                <td class="table__line"><?= $item->posicao ?></td>
+                <td class="table__line"><?= $item->nome ?></td>
+                <td class="table__line"><a class="text-red" href="item/delete?id=<?= $item->id ?>&id_categoria=<?= $categoria[0]->id ?>">X</a></td>
+            </tr>
+
+<?php } ?>
+
+        </tbody>
+    </table>
+
+    <div class="align-right mt-5">
+        <a class="link" href="/item/create?id=<?= $categoria[0]->id ?>">Adicionar novo item a lista</a>
+    </div>
+</section>

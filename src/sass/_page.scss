@@ -1,0 +1,47 @@
+.page {
+    background: rgb(147,73,161);
+    background: linear-gradient(-45deg, rgba(147,73,161,1) 30%, rgba(94,93,194,1) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+
+    &__inner {
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    
+        @media (min-width: 576px) {
+          & {
+            max-width: 520px;
+          }
+        }
+        
+        @media (min-width: 768px) {
+          & {
+            max-width: 740px;
+          }
+        }
+        
+        @media (min-width: 992px) {
+          & {
+            max-width: 960px;
+          }
+        }
+        
+        @media (min-width: 1200px) {
+          & {
+            max-width: 1120px;
+          }
+        }
+    }
+
+    &__user {
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+    &__view {
+      height: 40vh;
+    }
+}

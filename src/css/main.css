@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+ul {
+  list-style-type: none; }
+
+button, a {
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out; }
+
+body {
+  font-family: 'Lato', sans-serif; }
+
+.align-center {
+  text-align: center; }
+
+.align-right {
+  text-align: right; }
+
+.text-red {
+  color: red; }
+
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.mt-5 {
+  margin-top: 5rem; }
+
+.mb-10 {
+  margin-bottom: 10rem; }
+
+.erro {
+  border-radius: 5px;
+  background-color: red;
+  color: #fff;
+  padding: .7rem;
+  margin: .5rem 0; }
+
+.sucesso {
+  background-color: green;
+  color: #fff;
+  padding: .7rem; }
+
+.page {
+  background: #9349a1;
+  background: linear-gradient(-45deg, #9349a1 30%, #5e5dc2 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff; }
+  .page__inner {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto; }
+    @media (min-width: 576px) {
+      .page__inner {
+        max-width: 520px; } }
+    @media (min-width: 768px) {
+      .page__inner {
+        max-width: 740px; } }
+    @media (min-width: 992px) {
+      .page__inner {
+        max-width: 960px; } }
+    @media (min-width: 1200px) {
+      .page__inner {
+        max-width: 1120px; } }
+  .page__user {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto; }
+  .page__view {
+    height: 40vh; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 60px;
+  height: 60px;
+  position: relative; }
+
+.bar-btn {
+  cursor: pointer;
+  position: relative;
+  height: 16px;
+  width: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+  .bar-btn__line {
+    position: absolute;
+    height: 3px;
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    background-color: #fff; }
+  .bar-btn__line:first-child {
+    top: 0; }
+  .bar-btn__line:nth-child(2) {
+    top: 50%; }
+  .bar-btn__line:last-child {
+    top: 100%; }
+  @media (min-width: 768px) {
+    .bar-btn {
+      display: none; } }
+
+.input {
+  width: 100%;
+  padding: .7rem;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  margin-top: .7rem;
+  margin-bottom: .7rem; }
+
+.title {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  text-align: center; }
+  .title__ranking {
+    font-size: 1.5rem;
+    margin-bottom: 1rem; }
+
+.btn {
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: .5rem 2rem;
+  background-color: #5e5dc2;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  margin-top: .7rem; }
+  .btn:hover {
+    background-color: rgba(94, 93, 194, 0.5); }
+
+.link {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-right: .5rem; }
+  .link--abs {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+
+.navbar {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  line-height: initial; }
+  @media (min-width: 768px) {
+    .navbar {
+      display: block;
+      position: static;
+      line-height: 60px; } }
+  .navbar__link {
+    padding: 1rem;
+    display: block; }
+    .navbar__link:hover {
+      background-color: rgba(0, 0, 0, 0.1); }
+    @media (min-width: 768px) {
+      .navbar__link {
+        display: inline-block;
+        padding: 0 25px; } }
+
+.box {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center; }
+  .box__item {
+    padding: 1rem;
+    position: relative;
+    width: 250px; }
+
+.lista {
+  margin-left: 2rem;
+  margin-bottom: 1.5rem; }
+
+.table {
+  max-width: 500px;
+  margin: 0 auto;
+  border-collapse: collapse; }
+  .table__line {
+    padding: .7rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    height: 50px; }
+  .table__arrow {
+    position: relative;
+    width: 50px; }
+    .table__arrow-btn {
+      cursor: pointer;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      background-color: transparent;
+      border: none;
+      color: #fff; }
+    .table__arrow--up {
+      top: 5px; }
+    .table__arrow--down {
+      bottom: 5px; }
+
+.footer {
+  text-align: center; }

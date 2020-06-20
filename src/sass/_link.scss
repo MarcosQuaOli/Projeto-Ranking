@@ -1,0 +1,12 @@
+.link {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-right: .5rem;
+
+    &--abs {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}

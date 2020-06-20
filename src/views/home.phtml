@@ -1,0 +1,33 @@
+<section class="page__inner">
+
+    <h2 class="title">Seus Rankings</h2>
+
+    <div class="box mt-5">
+
+<?php foreach($categoria as $cat) { $i = 0; ?>
+
+        <div class="box__item">
+            <h4 class="title__ranking"><?= $cat->nome_categoria ?></h4>
+
+            <ol class="lista">
+
+<?php foreach($itens as $item) { ?>
+
+<?php if($cat->id == $item->categoria_id) { $i++; if($i > 3) break;?>
+
+                <li><?= $item->nome ?></li>
+
+<?php } ?>
+
+<?php } ?>
+
+            </ol>
+
+            <a class="link link--abs" href="/categoria?id=<?= $cat->id ?>">Ranking Completo</a>
+        </div>
+
+<?php } ?>
+
+    </div>
+
+</section>

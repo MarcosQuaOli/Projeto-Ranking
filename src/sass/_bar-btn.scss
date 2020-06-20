@@ -1,0 +1,35 @@
+.bar-btn {
+	cursor: pointer;
+	position: relative;
+	height: 16px;
+	width: 30px;  
+	top: 50%;
+    transform: translateY(-50%);
+	  	
+	&__line {
+		position: absolute;
+		height: 3px;
+		border-radius: 10px;
+		width: 100%;
+		display: block;
+		background-color: #fff; 
+	}
+	
+	&__line:first-child {
+		top: 0;
+	}
+	
+	&__line:nth-child(2) {
+		top: 50%;
+	}
+	
+	&__line:last-child {
+		top: 100%;
+	}
+	
+	@media (min-width: 768px) {
+		& {
+			display: none;
+		}
+	}
+}

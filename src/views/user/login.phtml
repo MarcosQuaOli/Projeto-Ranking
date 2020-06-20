@@ -1,0 +1,24 @@
+<section class="page__inner">
+
+<?php if(isset($_GET['erro']) && $_GET['erro'] == 'senha') { ?>
+
+    <p class="erro"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> E-mail ou senha inválidos.</p>
+
+<?php } ?>
+    
+    <div class="page__user">
+        <h2 class="title">Login</h2>
+    
+        <form method="post" action="/user/auth">
+            <input class="input" type="email" name="email" placeholder="E-mail">
+            <input class="input" type="password" name="senha" placeholder="Senha">
+    
+            <button class="btn" type="submit">Logar</button>
+        </form>
+    
+        <div class="align-center my-2">
+            <a class="link" href="user/register">Ou faça seu registro</a>
+        </div>
+    </div>
+
+</section>

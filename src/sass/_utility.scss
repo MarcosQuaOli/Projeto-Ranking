@@ -1,0 +1,38 @@
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.text-red {
+    color: red;
+}
+
+.my-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.mb-10 {
+    margin-bottom: 10rem;
+}
+
+.erro {
+    border-radius: 5px;
+    background-color: red;
+    color: #fff;
+    padding: .7rem;
+    margin: .5rem 0;
+}
+
+.sucesso {
+    background-color: green;
+    color: #fff;
+    padding: .7rem;
+}

@@ -1,0 +1,13 @@
+<section class="page__inner page__view">
+    
+    <div class="page__user">
+        <h2 class="title">Novo Item</h2>
+    
+        <form method="post" action="/item/store?id=<?= $id ?>">
+            <input class="input" type="text" name="item" minlength="3" required placeholder="Nome do item">
+    
+            <button class="btn" type="submit">Criar</button>
+        </form>
+    </div>
+
+</section>
